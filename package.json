@@ -61,7 +61,8 @@
         "icon": {
           "light": "resources/light/refresh.svg",
           "dark": "resources/dark/refresh.svg"
-        }
+        },
+        "category": "Joplin Note"
       },
       {
         "command": "joplinNote.createFolder",
@@ -69,7 +70,8 @@
         "icon": {
           "light": "resources/light/new-folder.svg",
           "dark": "resources/dark/new-folder.svg"
-        }
+        },
+        "category": "Joplin Note"
       },
       {
         "command": "joplinNote.createNote",
@@ -77,7 +79,8 @@
         "icon": {
           "light": "resources/light/new-file.svg",
           "dark": "resources/dark/new-file.svg"
-        }
+        },
+        "category": "Joplin Note"
       },
       {
         "command": "joplinNote.rename",
@@ -85,7 +88,8 @@
         "icon": {
           "light": "resources/light/edit.svg",
           "dark": "resources/dark/edit.svg"
-        }
+        },
+        "category": "Joplin Note"
       },
       {
         "command": "joplinNote.remove",
@@ -93,15 +97,18 @@
         "icon": {
           "light": "resources/light/trash.svg",
           "dark": "resources/dark/trash.svg"
-        }
+        },
+        "category": "Joplin Note"
       },
       {
         "command": "joplinNote.copyLink",
-        "title": "%commands.joplinNote.copyLink%"
+        "title": "%commands.joplinNote.copyLink%",
+        "category": "Joplin Note"
       },
       {
         "command": "joplinNote.toggleTodoState",
-        "title": "%commands.joplinNote.toggleTodoState%"
+        "title": "%commands.joplinNote.toggleTodoState%",
+        "category": "Joplin Note"
       },
       {
         "command": "joplinNote.search",
@@ -109,16 +116,19 @@
         "icon": {
           "light": "resources/light/search.svg",
           "dark": "resources/dark/search.svg"
-        }
+        },
+        "category": "Joplin Note"
       },
       {
         "command": "joplin.uploadImageFromClipboard",
-        "title": "%commands.joplinNote.uploadImageFromClipboard%",
-        "when": "resourceLangId == markdown && resourceFilename =~ /^edit-.*\\.md/ && editorTextFocus"
+        "title": "Upload Image From Clipboard",
+        "when": "resourceLangId == markdown && resourceFilename =~ /^edit-.*\\.md/ && editorTextFocus",
+        "category": "Joplin"
       },
       {
         "command": "joplin.uploadImageFromExplorer",
-        "title": "%commands.joplinNote.uploadImageFromExplorer%"
+        "title": "Upload Image from Explorer",
+        "category": "Joplin"
       }
     ],
     "menus": {
@@ -167,12 +177,12 @@
       ],
       "editor/context": [
         {
-          "command": "joplinNote.uploadImageFromClipboard",
+          "command": "joplin.uploadImageFromClipboard",
           "when": "resourceLangId == markdown && resourceFilename =~ /^edit-.*\\.md/ && editorTextFocus",
           "group": "joplinNote"
         },
         {
-          "command": "joplinNote.uploadImageFromExplorer",
+          "command": "joplin.uploadImageFromExplorer",
           "when": "resourceLangId == markdown && resourceFilename =~ /^edit-.*\\.md/ && editorTextFocus",
           "group": "joplinNote"
         }
